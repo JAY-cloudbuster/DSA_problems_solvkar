@@ -1,0 +1,21 @@
+
+----find Closest Number to zero----
+class Solution {
+
+    public int findClosestNumber(int[] nums) {
+        int minSoFar = nums[0];
+        int actualValue = nums[0];
+        for (int num : nums) {
+            if (Math.abs(num) < Math.abs(minSoFar)) {
+                minSoFar = Math.abs(num);
+                actualValue = num;
+            }
+            else if (Math.abs(num) == Math.abs(minSoFar)) {
+                minSoFar = Math.max(minSoFar, num);
+                actualValue = minSoFar;
+            }
+        }
+
+        return actualValue;
+    }
+}
