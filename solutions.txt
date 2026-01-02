@@ -19,3 +19,4 @@ class Solution {
         return actualValue;
     }
 }
+---remove duplicated from the sorted array---
