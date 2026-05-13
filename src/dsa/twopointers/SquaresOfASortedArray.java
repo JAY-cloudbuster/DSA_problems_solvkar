@@ -1,10 +1,12 @@
 package dsa.twopointers;
 
+import java.util.Arrays;
+
 public class SquaresOfASortedArray {
+
     public int[] sortedSquares() {
 
-        int[] nums = new int[5];
-        nums = [-4,-1,0,3,10];
+        int[] nums = {-4, -1, 0, 3, 10};
 
         int[] finalArr = new int[nums.length];
 
@@ -28,5 +30,14 @@ public class SquaresOfASortedArray {
         }
 
         return finalArr;
+    }
+
+    public static void main(String[] args) {
+
+        SquaresOfASortedArray obj = new SquaresOfASortedArray();
+
+        int[] result = obj.sortedSquares();
+
+        System.out.println(Arrays.toString(result));
     }
 }
